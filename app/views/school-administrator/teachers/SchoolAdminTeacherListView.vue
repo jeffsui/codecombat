@@ -41,7 +41,7 @@
                         v-for="(teachers, groupName) of groupedTeachers"
                 >
                     <li class="group-title">
-                        <h4 v-if="groupName !== 'undefined'">{{ groupName }}</h4>
+                        <h4 v-if="groupName">{{ groupName }}</h4>
                         <h4 v-else>{{ $t('school_administrator.other') }}</h4>
                     </li>
 
